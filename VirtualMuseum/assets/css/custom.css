@@ -1,0 +1,339 @@
+
+/* Define the Game of thrones-themed font to be used throughout */
+
+@font-face {
+	font-family: normalText;
+	src: url(../../assets/fonts/Ubuntu.ttf);
+	weight: normal;
+}
+
+
+@font-face {
+	font-family: GoTtheme;
+	src: url(../../assets/fonts/GameofThrones.ttf);
+	weight: bold;
+}
+
+
+body {
+  background-color: rgb(40, 44, 60);
+	font-family: GoTtheme, 'Open Sans', sans-serif;
+	color: rgb(50, 50, 50);
+}
+
+.main_contents {
+    margin: 10px;
+}
+
+h1, h2 {
+	font-weight: bold;
+}
+
+h3, h5, h6, p {
+	font-family: normalText;
+	
+}
+
+/* Logo */
+
+.GoT_logo {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  border: none;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(8,88,209,0.65);
+  -webkit-box-shadow: 0 0 15px 6px rgba(0,78,204,0.5) ;
+  box-shadow: 0 0 15px 6px rgba(0,78,204,0.5) ;
+  -webkit-transform: rotateZ(20deg)   ;
+  transform: rotateZ(20deg)   ;
+}
+
+.GoT_logo::before {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  border: none;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(2,85,211,0.65);
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,86,237,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,86,237,0.5) ;
+  text-shadow: none;
+  -webkit-transform: rotateZ(135deg)   ;
+  transform: rotateZ(135deg)   ;
+}
+
+
+/* General Logo */
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+    margin-top: 9px;
+    margin-left: 15px;
+}
+
+.logo h1 {
+    font-size: 29px;
+}
+
+.logo p {
+    font-size: 14px;
+}
+
+/* Navigation Bar */
+
+.navbar_GoT_museum {
+  background-color: rgb(28, 32, 48);
+    min-height: 70px;
+}
+
+.navbar_GoT_museum .navbar-brand {
+    color: white;
+ }
+
+.navbar_GoT_museum .navbar-brand:hover {
+    color: rgb(200, 200, 210);
+}
+
+/* Navigation Menu */
+
+.navbar_GoT_museum .navbar-collapse {
+	margin-top: 20px;
+}
+
+.navbar_GoT_museum .navbar-nav > li > a {
+    color: white;
+    padding-left: 10px;
+}
+
+.navbar_GoT_museum .navbar-nav > li > a:hover,
+.navbar_GoT_museum .navbar-nav > li > a:focus {
+    /* dim the links as they are hovered over */
+    color: rgb(200, 200, 210);
+}
+
+.navbar_GoT_museum .navbar-nav .nav-item > .active,
+.navbar_GoT_museum .navbar-nav > .active > a:hover,
+.navbar_GoT_museum .navbar-nav > .active > a:focus {
+    color: white; /* Active color */
+    background-color: rgb(40, 44, 60); /* dark color for background */
+    border-radius: 5px; /* round the corners */
+}
+
+/* Burger Menu */
+
+.navbar_GoT_museum .navbar-toggler {
+    border-color: white;
+}
+
+.navbar_GoT_museum  .navbar-toggler-icon {
+	/* Draws the three horizontal lines */
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar_GoT_museum .navbar-toggler:hover {
+	/* Dim the burger menu border on hover */
+    border-color: rgb(220, 210, 210);
+}
+
+.navbar_GoT_museum .navbar-toggler {
+    outline: none !important;
+}
+
+/* Dropdown Menu */
+
+.dropdown-menu {
+    text-align: -webkit-left;
+    background-color: rgb(210, 210, 220);
+    margin-top: 15px;
+}
+
+.dropdown-menu
+.dropdown-item {
+    color: black;
+}
+
+.dropdown-menu
+.dropdown-item:hover {
+    color: white;
+    background-color: rgb(28, 32, 48);
+}
+
+/* Landing Page */
+
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(14rem - 60px);
+  background-image: url("../../assets/images/landing_page/jonSnow.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header.masthead h1 {
+  font-size: 3rem;
+}
+
+header.masthead p {
+  font-weight: 400;
+}
+
+/* Separator beneath the main heading */
+hr {
+  max-width: 55px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-width: 3px;
+  border-color: rgba(46, 78, 130, 0.8);
+}
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  height: 250px;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-box .portfolio-box-caption {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(46, 78, 130, 0.8);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* Only show the overlay if we over over the box */
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  padding: 0 15px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-size: 20px;
+}
+
+
+/* Artefact Content */
+
+.card {
+    border: 0px solid rgba(0,0,0,.125);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(205, 205, 205);
+}
+
+/* Active tab in model information card */
+.card .nav-item .active {
+    background-color: rgb(205, 205, 205);
+    border-bottom: 0px;71	160	181
+}
+
+.card .nav-item a {
+    color: rgb(71,	160,	191);
+}
+
+.model3D  {
+    background-color: rgba(255, 255, 255, 0.0); /* Adjust the transparency to bring the color forward */
+    border: 0px solid rgba(0, 0, 0, 1.0); /* invisible border */
+    padding: 2px;
+    height: 500px;
+}
+
+X3D, x3d {
+    border-radius: 5px;
+    border: 0px solid rgba(0, 0, 0, 0.1); /* invisible border */
+    width: 100%;
+    height: 100%;
+}
+
+.btn-group {
+  margin-top: 10px;
+	width: 100%;
+}
+
+.btn-group .btn {
+	width: 100%;
+}
+
+.btn-responsive {
+    padding: 10px 10px;
+    font-size: 90%;
+    line-height: 1.2;
+    white-space: normal !important;
+}
+
+/* Footer */
+
+.footer {
+    color: #FFF;
+    background-color: rgb(28, 32, 48);
+    height: 80px;
+}
+
+.navbar-text > a {
+  color: inherit;
+	padding: 5px;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.copyright {
+  padding-top: 13px;
+}
+
+.social {
+    padding-top: 0px;
+}
+
