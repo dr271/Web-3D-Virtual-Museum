@@ -8,3 +8,7 @@ Built a mobile-first X3D based Virtual Museum exploiting HTML5, CSS3, X3D (X3DOM
 <p align="center">
   <img src="https://github.com/dr271/Web-3D-Virtual-Museum/blob/main/ReadmeImages-Web3D/UnsulliedWirefram.png">
 </p>
+
+<p align="center">
+  <img src="https://github.com/dr271/Web-3D-Virtual-Museum/blob/main/ReadmeImages-Web3D/Banner.png">
+</p>
