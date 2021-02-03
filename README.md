@@ -14,3 +14,4 @@ Website is no longer publicly hosted anywhere, so in order to run it I reccomend
 <p align="center">
   <img src="https://github.com/dr271/Web-3D-Virtual-Museum/blob/main/ReadmeImages-Web3D/Banner.png">
 </p>
+ 
